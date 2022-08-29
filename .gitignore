@@ -1,0 +1,12 @@
+# dependencies  npm
+/node_modules
+/artifacts
+/local-pancakeswap-libs
+
+# production
+/build
+
+# misc
+.DS_Store
+
+npm-debug.log*
