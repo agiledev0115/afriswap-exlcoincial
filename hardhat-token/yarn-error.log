@@ -1,0 +1,44 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add dotenv --network-timeout 1000000
+
+PATH: 
+  C:\Users\Administrator\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Administrator\bin;C:\Program Files\Python310\Scripts;C:\Program Files\Python310;C:\ffmpeg\bin;C:\Program Files\Python310\Scripts;C:\Program Files\Python310;C:\ffmpeg\bin;%PATH%;F:\gstreamer\1.0\msvc_x86_64\bin;C:\Program Files\dotnet;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;F:\gstreamer\1.0\msvc_x86_64\lib;C:\Program Files\Go\bin;C:\Users\Administrator\.local\share\solana\install\active_release\bin;C:\Users\Administrator\.cargo\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\OpenSSL-Win64\bin;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;C:\Program Files\heroku\bin;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;C:\ProgramData\chocolatey\bin;D:\msys64\mingw64\bin;C:\Windows\System32;C:\WINDOWS\system32\WindowsPowerShell\v1.0;C:\Users\Administrator\.dotnet\tools;F:\gstreamer\1.0\msvc_x86_64\lib\gstreamer-1.0;C:\Users\Administrator\go\bin;F:\gstreamer\1.0\msvc_x86_64\bin;C:\Program Files\dotnet;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;F:\gstreamer\1.0\msvc_x86_64\lib;C:\Program Files\Go\bin;C:\Users\Administrator\.local\share\solana\install\active_release\bin;C:\Users\Administrator\.cargo\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\OpenSSL-Win64\bin;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;C:\Program Files\heroku\bin;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;C:\ProgramData\chocolatey\bin;D:\msys64\mingw64\bin;C:\Windows\System32;C:\WINDOWS\system32\WindowsPowerShell\v1.0;C:\Users\Administrator\.dotnet\tools;F:\gstreamer\1.0\msvc_x86_64\lib\gstreamer-1.0;C:\Users\Administrator\go\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'E:\Projects\pancakeswap-fork\africunia-swap\hardhat-token\node_modules\keccak\prebuilds\win32-x64\node.napi.node'
+
+npm manifest: 
+  {
+    "name": "hardhat-local",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@nomiclabs/hardhat-ethers": "^2.0.3",
+      "@nomiclabs/hardhat-waffle": "^2.0.1",
+      "chai": "^4.3.4",
+      "ethereum-waffle": "^3.4.0",
+      "ethers": "^5.5.2",
+      "hardhat": "^2.7.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

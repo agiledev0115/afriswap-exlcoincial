@@ -26,7 +26,7 @@ async function main() {
   
     console.log("Account balance:", (await deployer.getBalance()).toString());
       
-    // 自动更改`pancake-swap-periphery`里面的`pairFor`的`hex`值
+    // `pancake-swap-periphery` `pairFor`'s `hex`
     await writeHex()
 
     // get json

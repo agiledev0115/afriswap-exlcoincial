@@ -1,10 +1,10 @@
 const { writeAddr,writeJson } = require("./artifact_log")
-const BUSDJSON = require("../../deployments/31337/BUSD")
-const WBNBJSON = require("../../deployments/31337/WBNB")
 
 // This is a script for deploying your contracts. You can adapt it to deploy
 // yours, or create new ones.
 async function main() {
+    let BUSDJSON = ""
+    let WBNBJSON = ""
     // This is just a convenience check
     if (network.name === "hardhat") {
       console.warn(
@@ -12,6 +12,16 @@ async function main() {
           "gets automatically created and destroyed every time. Use the Hardhat" +
           " option '--network localhost'"
       );
+    }
+    
+    if (network.name === "dev") {
+      BUSDJSON = require("../../deployments/31337/BUSD");
+      WBNBJSON = require("../../deployments/31337/WBNB");
+    }
+    
+    if (network.name === "goerli") {
+      BUSDJSON = require("../../deployments/5/BUSD");
+      WBNBJSON = require("../../deployments/5/WBNB");
     }
   
     // ethers is avaialble in the global scope
@@ -24,7 +34,7 @@ async function main() {
     console.log("Account balance:", (await deployer.getBalance()).toString());
      
     // deployer address as feeToSetter
-    feeToSetter = deployer.getAddress()
+    feeToSetter = await deployer.getAddress()
     // Fill your address as feeToSetter in constructor -> Deploy
     const PancakeFactory = await ethers.getContractFactory("PancakeFactory");
     const Factory = await PancakeFactory.deploy(feeToSetter);
@@ -37,6 +47,9 @@ async function main() {
     
     // save contract address
     await writeAddr(Factory.address, "PancakeFactory");
+    console.log(`feeToSetter: ${feeToSetter}`)
+    // save contract address
+    await writeAddr(feeToSetter, "FeeToSetter");
 
     // save init code hash
     const init_code_pair_hash = await Factory.INIT_CODE_PAIR_HASH();

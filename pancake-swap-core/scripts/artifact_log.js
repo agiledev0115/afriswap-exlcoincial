@@ -7,9 +7,8 @@ const util = require('util');
 const writeFile = util.promisify(fs.writeFile);
 
 /**
- * 记录合约发布地址
  * @param {*} deployments json
- * @param {*} name 类型
+ * @param {*} name
  */
 async function writeAddr(addr, name){
   const chainid = network.config.chainId;
