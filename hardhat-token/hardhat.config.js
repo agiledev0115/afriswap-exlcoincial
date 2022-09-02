@@ -25,6 +25,17 @@ module.exports = {
       url: `https://eth-goerli.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY || ''}`,
       accounts: [`0x${process.env.PRIVATE_KEY}`],
       chainId: 5
+    },
+    bsctest: {
+      url: "https://data-seed-prebsc-1-s1.binance.org:8545",
+      chainId: 97,
+      gasPrice: 20000000000,
+      accounts: [`0x${process.env.PRIVATE_KEY}`],
+    },
+    exltest: {
+      url: "https://testnet-rpc.exlscan.com/",
+      accounts: [`0x${process.env.PRIVATE_KEY}`],
+      chainId: 27082017,
     }
   },
   etherscan: {
