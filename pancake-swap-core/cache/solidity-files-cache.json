@@ -587,8 +587,8 @@
       ]
     },
     "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-core\\contracts\\interfaces\\IPancakePair.sol": {
-      "lastModificationDate": 1661518424829,
-      "contentHash": "9e4cd97338e60177d23a4cc784d24c3e",
+      "lastModificationDate": 1662127040242,
+      "contentHash": "831ea5848a0260afc9863bf4e3dd0989",
       "sourceName": "contracts/interfaces/IPancakePair.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -619,6 +619,442 @@
       ],
       "artifacts": [
         "IPancakePair"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-core\\contracts\\uniswap\\interfaces\\IERC20.sol": {
+      "lastModificationDate": 1662126643577,
+      "contentHash": "2290ca2ec74690ed9024d986955ef431",
+      "sourceName": "contracts/uniswap/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-core\\contracts\\uniswap\\interfaces\\IUniswapV2Callee.sol": {
+      "lastModificationDate": 1662126643577,
+      "contentHash": "dee30d5845c0662c462da74fbe109539",
+      "sourceName": "contracts/uniswap/interfaces/IUniswapV2Callee.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Callee"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-core\\contracts\\uniswap\\interfaces\\IUniswapV2Factory.sol": {
+      "lastModificationDate": 1662126643578,
+      "contentHash": "51d78f670a7cb6d7aa4d8096f82a99c6",
+      "sourceName": "contracts/uniswap/interfaces/IUniswapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Factory"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-core\\contracts\\uniswap\\interfaces\\IUniswapV2ERC20.sol": {
+      "lastModificationDate": 1662126643578,
+      "contentHash": "605345701334b98242fd4108573ae444",
+      "sourceName": "contracts/uniswap/interfaces/IUniswapV2ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2ERC20"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-core\\contracts\\uniswap\\interfaces\\IUniswapV2Pair.sol": {
+      "lastModificationDate": 1662126643578,
+      "contentHash": "d021d78f40daea7a0f06e1d2eed0e968",
+      "sourceName": "contracts/uniswap/interfaces/IUniswapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Pair"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-core\\contracts\\uniswap\\UniswapV2Pair.sol": {
+      "lastModificationDate": 1662127274513,
+      "contentHash": "4c035b0dd75977a04987556c1438c220",
+      "sourceName": "contracts/uniswap/UniswapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IUniswapV2Pair.sol",
+        "./UniswapV2ERC20.sol",
+        "./libraries/Math.sol",
+        "./libraries/UQ112x112.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IUniswapV2Factory.sol",
+        "./interfaces/IUniswapV2Callee.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "UniswapV2Pair"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-core\\contracts\\uniswap\\UniswapV2ERC20.sol": {
+      "lastModificationDate": 1662126643575,
+      "contentHash": "91a2001b4697613fd016ad98df162eff",
+      "sourceName": "contracts/uniswap/UniswapV2ERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IUniswapV2ERC20.sol",
+        "./libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "UniswapV2ERC20"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-core\\contracts\\uniswap\\libraries\\Math.sol": {
+      "lastModificationDate": 1662126643579,
+      "contentHash": "807b5a3ee256f814ef1aeb0996fd9a85",
+      "sourceName": "contracts/uniswap/libraries/Math.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-core\\contracts\\uniswap\\libraries\\UQ112x112.sol": {
+      "lastModificationDate": 1662126643579,
+      "contentHash": "b4c8a4d6e325bff8a4002ae0681eb036",
+      "sourceName": "contracts/uniswap/libraries/UQ112x112.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "UQ112x112"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-core\\contracts\\uniswap\\libraries\\SafeMath.sol": {
+      "lastModificationDate": 1662126643579,
+      "contentHash": "acf692d86aa69bcd2fe982bd93189262",
+      "sourceName": "contracts/uniswap/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-core\\contracts\\uniswap\\UniswapV2Factory.sol": {
+      "lastModificationDate": 1662126643575,
+      "contentHash": "d11e6f227d62998403ec093773bfa291",
+      "sourceName": "contracts/uniswap/UniswapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IUniswapV2Factory.sol",
+        "./UniswapV2Pair.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "UniswapV2Factory"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-core\\contracts\\uniswap\\test\\ERC20.sol": {
+      "lastModificationDate": 1662126643580,
+      "contentHash": "5da3646d8bb418f39a51cc5b61c8b988",
+      "sourceName": "contracts/uniswap/test/ERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../UniswapV2ERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "ERC20"
       ]
     }
   }

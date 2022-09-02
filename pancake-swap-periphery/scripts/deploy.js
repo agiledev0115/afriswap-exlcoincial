@@ -1,13 +1,13 @@
 const { writeAddr,writeJson } = require("./artifact_log")
 const { addTokens } = require("./generate_tokenlists")
 const { writeHex } = require("./writeFile/writeFile")
-const BUSDJSON = require("../../deployments/31337/BUSD")
-const WBNBJSON = require("../../deployments/31337/WBNB")
-const USDTJSON = require("../../deployments/31337/USDT.json")
 
 // This is a script for deploying your contracts. You can adapt it to deploy
 // yours, or create new ones.
 async function main() {
+    let BUSDJSON = require("../../deployments/31337/BUSD")
+    let WBNBJSON = require("../../deployments/31337/WBNB")
+    let USDTJSON = require("../../deployments/31337/USDT.json")
     // This is just a convenience check
     if (network.name === "hardhat") {
       console.warn(
@@ -16,7 +16,18 @@ async function main() {
           " option '--network localhost'"
       );
     }
+
+    if (network.name === "goerli") {
+      BUSDJSON = require("../../deployments/5/BUSD")
+      WBNBJSON = require("../../deployments/5/WBNB")
+      USDTJSON = require("../../deployments/5/USDT.json")
+    }
   
+    if (network.name === "bsctest") {
+      BUSDJSON = require("../../deployments/97/BUSD")
+      WBNBJSON = require("../../deployments/97/WBNB")
+      USDTJSON = require("../../deployments/97/USDT.json")
+    }
     // ethers is avaialble in the global scope
     const [deployer] = await ethers.getSigners();
     console.log(
@@ -87,7 +98,7 @@ async function main() {
 //   }
 
 
-// 不注释掉这些方法，会导致写json为空
+// 
 main()
     .then(() => process.exit(0))
     .catch((error) => {

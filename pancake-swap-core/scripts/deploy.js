@@ -24,6 +24,12 @@ async function main() {
       WBNBJSON = require("../../deployments/5/WBNB");
     }
   
+    if (network.name === "bsctest") {
+      BUSDJSON = require("../../deployments/97/BUSD");
+      WBNBJSON = require("../../deployments/97/WBNB");
+    }
+  
+  
     // ethers is avaialble in the global scope
     const [deployer] = await ethers.getSigners();
     console.log(
