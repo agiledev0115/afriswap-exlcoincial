@@ -41,7 +41,17 @@ const config = {
     }
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY
+    apiKey: process.env.ETHERSCAN_API_KEY,
+    customChains: [
+      {
+        network: "exltest",
+        chainId: 27082017,
+        urls: {
+          apiURL: "https://testnet-explorer.exlscan.com/api",
+          browserURL: "https://testnet-explorer.exlscan.com/"
+        }
+      }
+    ]
   },
   mocha: {
     timeout: 10000000000

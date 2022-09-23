@@ -22,21 +22,21 @@ async function main() {
       "Deploying the contracts with the account:",
       await deployer.getAddress()
     );
-  
+
     console.log("Account balance:", (await deployer.getBalance()).toString());
-     
+
     // deployer address as feeToSetter
     const feeToSetter = await deployer.getAddress()
     // Fill your address as feeToSetter in constructor -> Deploy
     const PancakeFactory = await ethers.getContractFactory("PancakeFactory");
     const Factory = await PancakeFactory.deploy(feeToSetter);
     await Factory.deployed();
-  
+
     console.log("PancakeFactory address:", Factory.address);
-    
+
     // save contract address
     await writeAddr(Factory.address, "PancakeFactory");
-    
+
     console.log(`feeToSetter: ${feeToSetter}`)
     // save contract address
     await writeAddr(feeToSetter, "FeeToSetter");
@@ -48,6 +48,23 @@ async function main() {
     // We also save the contract's artifacts and address in the frontend directory
     // saveFrontendFiles(token);
 
+    // createPair BNB-BUSD LP
+    // const _BNB_BUSD_PairAddress = await
+  // Factory.createPair(WBNBJSON.address, BUSDJSON.address).then((data: any) => {
+  //   console.log(`data: ${data}`)
+  // })
+  const _BNB_BUSD_PairAddress = await Factory.createPair(WBNBJSON.address, BUSDJSON.address)
+  console.log("BNB-BUSD LP addresss1", _BNB_BUSD_PairAddress)
+
+  const lp_address = await Factory.getPair(WBNBJSON.address, BUSDJSON.address);
+  console.log(`lp_address ${lp_address}`)
+
+    const BNB_BUSD_PairAddress2 = await Factory.getPair(BUSDJSON.address, WBNBJSON.address);
+    console.log("BNB-BUSD LP addresss1:", _BNB_BUSD_PairAddress)
+    // console.log("BNB-BUSD LP addresss2:", BNB_BUSD_PairAddress)
+    console.log("BNB-BUSD LP addresss3:", BNB_BUSD_PairAddress2)
+    await writeAddr(BNB_BUSD_PairAddress2, "BNB_BUSD_PairAddress");
+
     // Pancakepair
     const _PancakePair = await ethers.getContractFactory("PancakePair");
     const PancakePair = await _PancakePair.deploy();
@@ -55,12 +72,12 @@ async function main() {
     console.log("PancakePair address:", PancakePair.address);
     // save contract address
     await writeAddr(PancakePair.address, "PancakePair");
-  
+
     // CakeToken
-    const _CAKEToken = await ethers.getContractFactory("CakeToken");
+    const _CAKEToken = await ethers.getContractFactory("AFCASHToken");
     const CakeToken = await _CAKEToken.deploy();
     await CakeToken.deployed();
-    console.log("CakeToken address:", CakeToken.address);
+    console.log("CakepanvdToken address:", CakeToken.address);
     // save token address
     await writeAddr(CakeToken.address, "CAKE");
 
@@ -95,7 +112,7 @@ async function main() {
     console.log("PancakeProfile address:", PancakeProfile.address);
     // save token address
     await writeAddr(PancakeProfile.address, "PancakeProfile");
-    
+
     // AnniversaryAchievement
     const _AnniversaryAchievement = await ethers.getContractFactory("AnniversaryAchievement");
     const AnniversaryAchievement = await _AnniversaryAchievement.deploy(PancakeProfile.address, 20, 20, 20, 20);
@@ -111,19 +128,9 @@ async function main() {
     console.log("ClaimBackCake address:", ClaimBackCake.address);
     // save token address
     await writeAddr(ClaimBackCake.address, "ClaimBackCake");
-    
-
-    // createPair BNB-BUSD LP 
-    const _BNB_BUSD_PairAddress = await Factory.createPair(WBNBJSON.address, BUSDJSON.address);
-    const BNB_BUSD_PairAddress = await Factory.getPair(WBNBJSON.address, BUSDJSON.address);
-    const BNB_BUSD_PairAddress2 = await Factory.getPair(BUSDJSON.address, WBNBJSON.address);
-    console.log("BNB-BUSD LP addresss1:", _BNB_BUSD_PairAddress)
-    console.log("BNB-BUSD LP addresss2:", BNB_BUSD_PairAddress)
-    console.log("BNB-BUSD LP addresss3:", BNB_BUSD_PairAddress2)
-    await writeAddr(BNB_BUSD_PairAddress, "BNB_BUSD_PairAddress");
 
     // Add BNB-BUSD LP to MasterChef
-    await MasterChef.add(100, BNB_BUSD_PairAddress, true)
+    await MasterChef.add(100, BNB_BUSD_PairAddress2, true)
     const poolLength = await MasterChef.poolLength()
     console.log("poolLength:", poolLength)
   }

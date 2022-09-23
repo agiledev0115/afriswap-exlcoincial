@@ -12,7 +12,7 @@ import '@openzeppelin/contracts/token/ERC20/SafeERC20.sol';
 import '@openzeppelin/contracts/utils/Address.sol';
 
 // CakeToken with Governance.
-contract CakeToken is ERC20('PancakeSwap Token', 'Cake') {
+contract AFCASHToken is ERC20('AFCASH Token', 'AFCASH') {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
     function mint(address _to, uint256 _amount) public {
         _mint(_to, _amount);
@@ -236,9 +236,9 @@ contract SyrupBar is ERC20('SyrupBar Token', 'SYRUP') {
     }
 
     // The CAKE TOKEN!
-    CakeToken public cake;
+    AFCASHToken public cake;
 
-    constructor(CakeToken _cake) public {
+    constructor(AFCASHToken _cake) public {
         cake = _cake;
     }
 
@@ -506,7 +506,7 @@ contract MasterChef is Ownable {
     }
 
     // The CAKE TOKEN!
-    CakeToken public cake;
+    AFCASHToken public cake;
     // The SYRUP TOKEN!
     SyrupBar public syrup;
     // Dev address.
@@ -532,7 +532,7 @@ contract MasterChef is Ownable {
     event EmergencyWithdraw(address indexed user, uint256 indexed pid, uint256 amount);
 
     constructor(
-        CakeToken _cake,
+        AFCASHToken _cake,
         SyrupBar _syrup,
         address _devaddr,
         uint256 _cakePerBlock,

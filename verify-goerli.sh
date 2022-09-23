@@ -43,31 +43,31 @@ verify() {
 
 # verify hardhat-tokens contracts
 cd hardhat-token
-# verify "AFCASH.json" "contracts/ERC20Tokens/AFCASH.sol:AFCASH" "scripts/5/none.js"
-# verify "BAKE.json" "contracts/ERC20Tokens/BAKE.sol:BAKE" "scripts/5/none.js"
-# verify "BUSD.json" "contracts/ERC20Tokens/BUSD.sol:BUSD" "scripts/5/none.js"
-# verify "DAI.json" "contracts/ERC20Tokens/DAI.sol:DAI" "scripts/5/none.js"
-# verify "ETH.json" "contracts/ERC20Tokens/ETH.sol:Ethereum" "scripts/5/none.js"
-# verify "Multicall.json" "contracts/MULTICALL.sol:Multicall2" "scripts/5/none.js"
-# verify "USDT.json" "contracts/ERC20Tokens/USDT.sol:USDT" "scripts/5/none.js"
-# verify "WBNB.json" "contracts/ERC20Tokens/WBNB.sol:WBNB" "scripts/5/none.js"
-# verify "WETH.json" "contracts/ERC20Tokens/WETH.sol:WETH" "scripts/5/none.js"
-# verify "XRP.json" "contracts/ERC20Tokens/XRP.sol:XRP" "scripts/5/none.js"
+verify "AFCASH.json" "contracts/ERC20Tokens/AFCASH.sol:AFCASH" "scripts/5/none.js"
+verify "BAKE.json" "contracts/ERC20Tokens/BAKE.sol:BAKE" "scripts/5/none.js"
+verify "BUSD.json" "contracts/ERC20Tokens/BUSD.sol:BUSD" "scripts/5/none.js"
+verify "DAI.json" "contracts/ERC20Tokens/DAI.sol:DAI" "scripts/5/none.js"
+verify "ETH.json" "contracts/ERC20Tokens/ETH.sol:Ethereum" "scripts/5/none.js"
+verify "Multicall.json" "contracts/MULTICALL.sol:Multicall2" "scripts/5/none.js"
+verify "USDT.json" "contracts/ERC20Tokens/USDT.sol:USDT" "scripts/5/none.js"
+verify "WBNB.json" "contracts/ERC20Tokens/WBNB.sol:WBNB" "scripts/5/none.js"
+verify "WETH.json" "contracts/ERC20Tokens/WETH.sol:WETH" "scripts/5/none.js"
+verify "XRP.json" "contracts/ERC20Tokens/XRP.sol:XRP" "scripts/5/none.js"
 
 # verify pancake-swap-core contracts
-# cd ..
-# cd pancake-swap-core
-# verify "PancakeFactory.json" "contracts/PancakeFactory.sol:PancakeFactory" "scripts/5/pancakeFactory.ts"
-# verify "PancakePair.json" "contracts/PancakePair.sol:PancakePair" "scripts/5/none.js"
-# verify "CAKE.json" "contracts/MasterChef.sol:CakeToken" "scripts/5/none.js"
-# verify "SyrupBar.json" "contracts/MasterChef.sol:SyrupBar" "scripts/5/syrupBar.js"
-# verify "MasterChef.json" "contracts/MasterChef.sol:MasterChef" "scripts/5/masterChef.js"
-# verify "SousChef.json" "contracts/SousChef.sol:SousChef" "scripts/5/sousChef.js"
-# verify "PancakeProfile.json" "contracts/ClaimBackCake.sol:PancakeProfile" "scripts/5/pancakeProfile.js"
-# verify "AnniversaryAchievement.json" "contracts/ClaimBackCake.sol:AnniversaryAchievement" "scripts/5/anniversaryAchievement.js"
-# verify "ClaimBackCake.json" "contracts/ClaimBackCake.sol:ClaimBackCake" "scripts/5/claimBackCake.js"
+cd ..
+cd pancake-swap-core
+verify "PancakeFactory.json" "contracts/PancakeFactory.sol:PancakeFactory" "scripts/5/pancakeFactory.ts"
+verify "PancakePair.json" "contracts/PancakePair.sol:PancakePair" "scripts/5/none.js"
+verify "CAKE.json" "contracts/MasterChef.sol:CakeToken" "scripts/5/none.js"
+verify "SyrupBar.json" "contracts/MasterChef.sol:SyrupBar" "scripts/5/syrupBar.js"
+verify "MasterChef.json" "contracts/MasterChef.sol:MasterChef" "scripts/5/masterChef.js"
+verify "SousChef.json" "contracts/SousChef.sol:SousChef" "scripts/5/sousChef.js"
+verify "PancakeProfile.json" "contracts/ClaimBackCake.sol:PancakeProfile" "scripts/5/pancakeProfile.js"
+verify "AnniversaryAchievement.json" "contracts/ClaimBackCake.sol:AnniversaryAchievement" "scripts/5/anniversaryAchievement.js"
+verify "ClaimBackCake.json" "contracts/ClaimBackCake.sol:ClaimBackCake" "scripts/5/claimBackCake.js"
 
-# # verify pancake-swap-periphery contracts
+# verify pancake-swap-periphery contracts
 cd ..
 cd pancake-swap-periphery
 verify "PancakeRouter.json" "contracts/PancakeRouter.sol:PancakeRouter" "scripts/5/pancakeRouter.js"

@@ -1126,8 +1126,8 @@
       ]
     },
     "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-core\\contracts\\MasterChef.sol": {
-      "lastModificationDate": 1662647850017,
-      "contentHash": "3036387490caf52b5d5b7a69d7223844",
+      "lastModificationDate": 1663723537572,
+      "contentHash": "87570576cdad0dc044c32e5cafc600c9",
       "sourceName": "contracts/MasterChef.sol",
       "solcConfig": {
         "version": "0.6.12",
@@ -1164,7 +1164,7 @@
         "0.6.12"
       ],
       "artifacts": [
-        "CakeToken",
+        "AFCASHToken",
         "IMigratorChef",
         "MasterChef",
         "SyrupBar"

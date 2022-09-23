@@ -1,13 +1,13 @@
 import JSBI from 'jsbi';
-const FACTORY_ADDRESS_JSON = require('../../../../../deployments/31337/PancakeFactory.json')
-const INIT_CODE_HASH_JSON = require('../../../../../deployments/31337/INIT_CODE_PAIR_HASH.json')
+// const FACTORY_ADDRESS_JSON = require('../../../../../deployments/5/PancakeFactory.json')
+// const INIT_CODE_HASH_JSON = require('../../../../../deployments/5/INIT_CODE_PAIR_HASH.json')
 
 // exports for external consumption
 export type BigintIsh = JSBI | bigint | string
 
 export enum ChainId {
-  MAINNET = 56,
-  TESTNET = 31337
+  MAINNET = 27082022,
+  TESTNET = 5
 }
 
 export enum TradeType {
@@ -22,8 +22,8 @@ export enum Rounding {
 }
 
 
-export  const FACTORY_ADDRESS = FACTORY_ADDRESS_JSON.address;
-export  const INIT_CODE_HASH = INIT_CODE_HASH_JSON.INIT_CODE_PAIR_HASH;
+export  const FACTORY_ADDRESS = "0x34F3e6A6695E98B370b58984FbdCA14222117403";
+export  const INIT_CODE_HASH = "0xb7098b3d882ce29e7f9104fcfb5853e10b7997c1a70018c521997d41a3feb4f9";
 
 
 
