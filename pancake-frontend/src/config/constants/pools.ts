@@ -1,7 +1,7 @@
 import { VaultKey } from 'state/types'
 import tokens, { serializeTokens } from './tokens'
 import { SerializedPoolConfig, PoolCategory } from './types'
-import _MasterChefAddr from '../deployments/31337/MasterChef.json';
+import _MasterChefAddr from '../deployments/5/MasterChef.json';
 
 const serializedTokens = serializeTokens()
 
@@ -34,7 +34,7 @@ const pools: SerializedPoolConfig[] = [
     stakingToken: serializedTokens.cake,
     earningToken: serializedTokens.cake,
     contractAddress: {
-      31337: _MasterChefAddr.address,
+      5: _MasterChefAddr.address,
       56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
     },
     poolCategory: PoolCategory.CORE,

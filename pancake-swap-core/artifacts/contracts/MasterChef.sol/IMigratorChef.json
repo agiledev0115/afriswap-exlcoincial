@@ -6,7 +6,7 @@
     {
       "inputs": [
         {
-          "internalType": "contract IBEP20",
+          "internalType": "contract IERC20",
           "name": "token",
           "type": "address"
         }
@@ -14,7 +14,7 @@
       "name": "migrate",
       "outputs": [
         {
-          "internalType": "contract IBEP20",
+          "internalType": "contract IERC20",
           "name": "",
           "type": "address"
         }

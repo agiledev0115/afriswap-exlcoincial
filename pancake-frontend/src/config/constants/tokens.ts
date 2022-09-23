@@ -1,15 +1,15 @@
 import { ChainId, Token } from 'local-pancakeswap-libs/sdk'
 import { serializeToken } from 'state/user/hooks/helpers'
 import { SerializedToken } from './types'
-import BAKEJSON from '../deployments/31337/BAKE.json'
-import BUSDJSON from '../deployments/31337/BUSD.json'
-import CAKEJSON from '../deployments/31337/CAKE.json'
-import DAIJSON from '../deployments/31337/DAI.json'
-import ETHJSON from '../deployments/31337/ETH.json'
-import USDTJSON from '../deployments/31337/USDT.json'
-import WBNBJSON from '../deployments/31337/WBNB.json'
-import WETHJSON from '../deployments/31337/WETH.json'
-import XRPJSON from '../deployments/31337/XRP.json'
+import BAKEJSON from '../deployments/5/BAKE.json'
+import BUSDJSON from '../deployments/5/BUSD.json'
+import CAKEJSON from '../deployments/5/CAKE.json'
+import DAIJSON from '../deployments/5/DAI.json'
+import ETHJSON from '../deployments/5/ETH.json'
+import USDTJSON from '../deployments/5/USDT.json'
+import WBNBJSON from '../deployments/5/WBNB.json'
+import WETHJSON from '../deployments/5/WETH.json'
+import XRPJSON from '../deployments/5/XRP.json'
 
 const { MAINNET, TESTNET } = ChainId
 
@@ -1939,32 +1939,6 @@ export const testnetTokens = {
     'WETH',
     'WETH TOKENS',
     '',
-  ),
-  xrp: new Token(
-    TESTNET,
-    XRPJSON.address,
-    18,
-    'XRP',
-    'XRP TOKENS',
-    'https://www.paxos.com/xrp/',
-  ),
-  bondly: new Token(
-    TESTNET,
-    // 主网的
-    '0x96058f8C3e16576D9BD68766f3836d9A33158f89',
-    18,
-    'BONDLY',
-    'Bondly Token',
-    'https://www.bondly.finance/',
-  ),
-  safemoon: new Token(
-    TESTNET,
-    // 主网的
-    '0x8076C74C5e3F5852037F31Ff0093Eeb8c8ADd8D3',
-    9,
-    'SAFEMOON',
-    'Safemoon Token',
-    'https://safemoon.net/',
   ),
 }
 

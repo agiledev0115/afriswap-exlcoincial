@@ -1,6 +1,6 @@
 import { ChainId, JSBI, Percent, Token } from 'local-pancakeswap-libs/sdk'
 import { mainnetTokens, testnetTokens } from './tokens'
-import ROUTER_ADDRESS_JSON from '../deployments/31337/PancakeRouter.json'
+import ROUTER_ADDRESS_JSON from '../deployments/5/PancakeRouter.json'
 
 export const ROUTER_ADDRESS = ROUTER_ADDRESS_JSON.address
 // export const ROUTER_ADDRESS = '0x10ED43C718714eb63d5aA57B78B54704E256024E'
@@ -31,7 +31,6 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     testnetTokens.eth,
     testnetTokens.usdt,
     testnetTokens.wbnb,
-    testnetTokens.xrp,
   ],
 }
 

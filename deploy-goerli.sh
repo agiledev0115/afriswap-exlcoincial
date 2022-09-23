@@ -1,11 +1,11 @@
 cd hardhat-token
-npx hardhat run scripts/deploy.js --network goerli
+npx hardhat run scripts/deploy.ts --network goerli
 
 cd ../pancake-swap-core
-npx hardhat run scripts/deploy.js --network goerli
+npx hardhat run scripts/deploy.ts --network goerli
 
 cd ../pancake-swap-periphery
-npx hardhat run scripts/deploy.js --network goerli
+npx hardhat run scripts/deploy.ts --network goerli
 
 cd ../pancake-frontend
 cp ./src/config/constants/tokenLists/pancake-default.tokenlist.json   ./public/

@@ -1,1 +1,25 @@
-{"name":"PancakeSwap Default List","timestamp":"2021-05-06T00:00:00Z","version":{"major":3,"minor":0,"patch":0},"tags":{},"logoURI":"https://pancakeswap.finance/logo.png","keywords":["pancake","default"],"tokens":[{"name":"Tether USD","symbol":"USDT","address":"0x1291Be112d480055DaFd8a610b7d1e203891C274","chainId":5,"decimals":18,"logoURI":"https://pancakeswap.finance/images/tokens/0x55d398326f99059ff775485246999027b3197955.png"}]}
+{
+  "name": "PancakeSwap Default List",
+  "timestamp": "2021-05-06T00:00:00Z",
+  "version": {
+    "major": 3,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "https://pancakeswap.finance/logo.png",
+  "keywords": [
+    "pancake",
+    "default"
+  ],
+  "tokens": [
+    {
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "address": "0x315dae4B35C2e0dAf65a0CE630ae0385573C4B15",
+      "chainId": 5,
+      "decimals": 18,
+      "logoURI": "https://pancakeswap.finance/images/tokens/0x55d398326f99059ff775485246999027b3197955.png"
+    }
+  ]
+}

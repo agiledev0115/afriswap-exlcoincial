@@ -1,7 +1,3 @@
-// require("@nomiclabs/hardhat-waffle");
-// require("@nomiclabs/hardhat-etherscan");
-// require('dotenv').config();
-
 import "@nomiclabs/hardhat-waffle";
 import "@nomiclabs/hardhat-etherscan";
 import dotenv from "dotenv";
@@ -49,9 +45,8 @@ const config = {
     apiKey: process.env.ETHERSCAN_API_KEY
   },
   mocha: {
-    timeout: 10000000
+    timeout: 10000000000
   }
 };
-
 
 export default config;

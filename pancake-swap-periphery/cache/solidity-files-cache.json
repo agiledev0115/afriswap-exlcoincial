@@ -1,113 +1,6 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\node_modules\\@nomiclabs\\buidler\\console.sol": {
-      "lastModificationDate": 1662512038910,
-      "contentHash": "c20b2460755f312099ccd61427237ded",
-      "sourceName": "@nomiclabs/buidler/console.sol",
-      "solcConfig": {
-        "version": "0.6.6",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.4.22 <0.8.0"
-      ],
-      "artifacts": [
-        "console"
-      ]
-    },
-    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\libraries\\TransferHelper.sol": {
-      "lastModificationDate": 1662529439500,
-      "contentHash": "b53d920d34d4a0f92aaa16cdc4c3bea9",
-      "sourceName": "contracts/libraries/TransferHelper.sol",
-      "solcConfig": {
-        "version": "0.6.6",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@nomiclabs/buidler/console.sol"
-      ],
-      "versionPragmas": [
-        ">=0.6.0"
-      ],
-      "artifacts": [
-        "TransferHelper"
-      ]
-    },
-    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\IWETH.sol": {
-      "lastModificationDate": 1661518424947,
-      "contentHash": "270f2c1a1f22475259d5a2f6a524f72e",
-      "sourceName": "contracts/interfaces/IWETH.sol",
-      "solcConfig": {
-        "version": "0.6.6",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "IWETH"
-      ]
-    },
     "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\IERC20.sol": {
       "lastModificationDate": 1661518424943,
       "contentHash": "3d2b948a9266ee66b6e739de97c7e6e9",
@@ -141,6 +34,156 @@
       ],
       "artifacts": [
         "IERC20"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\PancakeRouter01.sol": {
+      "lastModificationDate": 1661518424942,
+      "contentHash": "da517b27859e4692077121ae89179aad",
+      "sourceName": "contracts/PancakeRouter01.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IPancakeFactory.sol",
+        "./libraries/TransferHelper.sol",
+        "./libraries/PancakeLibrary.sol",
+        "./interfaces/IPancakeRouter01.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "PancakeRouter01"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\IPancakeFactory.sol": {
+      "lastModificationDate": 1661518424946,
+      "contentHash": "21a09f1df5792450572a8a1a8da5fa7d",
+      "sourceName": "contracts/interfaces/IPancakeFactory.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IPancakeFactory"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\libraries\\TransferHelper.sol": {
+      "lastModificationDate": 1662543513823,
+      "contentHash": "7fad4038612c5f040ebd746a3e58e0db",
+      "sourceName": "contracts/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\libraries\\PancakeLibrary.sol": {
+      "lastModificationDate": 1662652735686,
+      "contentHash": "c19db78d6271fbb29317a03d95ba89ee",
+      "sourceName": "contracts/libraries/PancakeLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IPancakePair.sol",
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "PancakeLibrary"
       ]
     },
     "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\IPancakeRouter01.sol": {
@@ -178,47 +221,10 @@
         "IPancakeRouter01"
       ]
     },
-    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\IPancakeRouter02.sol": {
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\IWETH.sol": {
       "lastModificationDate": 1661518424947,
-      "contentHash": "6cfaf647f61bb1c494a786dcd78f2e8f",
-      "sourceName": "contracts/interfaces/IPancakeRouter02.sol",
-      "solcConfig": {
-        "version": "0.6.6",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./IPancakeRouter01.sol"
-      ],
-      "versionPragmas": [
-        ">=0.6.2"
-      ],
-      "artifacts": [
-        "IPancakeRouter02"
-      ]
-    },
-    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\V1\\IUniswapV1Exchange.sol": {
-      "lastModificationDate": 1661518424948,
-      "contentHash": "5ec7fe77a73b5ace5fc1fbae6b87f34e",
-      "sourceName": "contracts/interfaces/V1/IUniswapV1Exchange.sol",
+      "contentHash": "270f2c1a1f22475259d5a2f6a524f72e",
+      "sourceName": "contracts/interfaces/IWETH.sol",
       "solcConfig": {
         "version": "0.6.6",
         "settings": {
@@ -247,77 +253,7 @@
         ">=0.5.0"
       ],
       "artifacts": [
-        "IUniswapV1Exchange"
-      ]
-    },
-    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\V1\\IUniswapV1Factory.sol": {
-      "lastModificationDate": 1661518424948,
-      "contentHash": "abe9343b20a93919250e0dba78bfd9c1",
-      "sourceName": "contracts/interfaces/V1/IUniswapV1Factory.sol",
-      "solcConfig": {
-        "version": "0.6.6",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "IUniswapV1Factory"
-      ]
-    },
-    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\IPancakeMigrator.sol": {
-      "lastModificationDate": 1661518424946,
-      "contentHash": "99a2fdd44cfbd5d55eae2b990ff8e3ec",
-      "sourceName": "contracts/interfaces/IPancakeMigrator.sol",
-      "solcConfig": {
-        "version": "0.6.6",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "IPancakeMigrator"
+        "IWETH"
       ]
     },
     "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\IPancakePair.sol": {
@@ -353,6 +289,121 @@
       ],
       "artifacts": [
         "IPancakePair"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\libraries\\SafeMath.sol": {
+      "lastModificationDate": 1661518424953,
+      "contentHash": "9f77127a0e2c55c2058453327e84bde3",
+      "sourceName": "contracts/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\PancakeRouter.sol": {
+      "lastModificationDate": 1662113986387,
+      "contentHash": "33cacd67082387bd4582b5ebe94b2bd3",
+      "sourceName": "contracts/PancakeRouter.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IPancakeFactory.sol",
+        "./libraries/TransferHelper.sol",
+        "./interfaces/IPancakeRouter02.sol",
+        "./libraries/PancakeLibrary.sol",
+        "./libraries/SafeMath.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "PancakeRouter"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\IPancakeRouter02.sol": {
+      "lastModificationDate": 1661518424947,
+      "contentHash": "6cfaf647f61bb1c494a786dcd78f2e8f",
+      "sourceName": "contracts/interfaces/IPancakeRouter02.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IPancakeRouter01.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IPancakeRouter02"
       ]
     },
     "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\libraries\\PancakeOracleLibrary.sol": {
@@ -537,10 +588,52 @@
         "BitMath"
       ]
     },
-    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\IPancakeFactory.sol": {
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\PancakeMigrator.sol": {
+      "lastModificationDate": 1661518424941,
+      "contentHash": "b2c4fcca5de40e5223ec1b25488ee84c",
+      "sourceName": "contracts/PancakeMigrator.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./libraries/TransferHelper.sol",
+        "./interfaces/IPancakeMigrator.sol",
+        "./interfaces/V1/IUniswapV1Factory.sol",
+        "./interfaces/V1/IUniswapV1Exchange.sol",
+        "./interfaces/IPancakeRouter01.sol",
+        "./interfaces/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "PancakeMigrator"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\IPancakeMigrator.sol": {
       "lastModificationDate": 1661518424946,
-      "contentHash": "21a09f1df5792450572a8a1a8da5fa7d",
-      "sourceName": "contracts/interfaces/IPancakeFactory.sol",
+      "contentHash": "99a2fdd44cfbd5d55eae2b990ff8e3ec",
+      "sourceName": "contracts/interfaces/IPancakeMigrator.sol",
       "solcConfig": {
         "version": "0.6.6",
         "settings": {
@@ -569,7 +662,77 @@
         ">=0.5.0"
       ],
       "artifacts": [
-        "IPancakeFactory"
+        "IPancakeMigrator"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\V1\\IUniswapV1Factory.sol": {
+      "lastModificationDate": 1661518424948,
+      "contentHash": "abe9343b20a93919250e0dba78bfd9c1",
+      "sourceName": "contracts/interfaces/V1/IUniswapV1Factory.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV1Factory"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\V1\\IUniswapV1Exchange.sol": {
+      "lastModificationDate": 1661518424948,
+      "contentHash": "5ec7fe77a73b5ace5fc1fbae6b87f34e",
+      "sourceName": "contracts/interfaces/V1/IUniswapV1Exchange.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV1Exchange"
       ]
     },
     "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\interfaces\\IERC20Minimal.sol": {
@@ -749,208 +912,8 @@
         "Migrations"
       ]
     },
-    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\PancakeRouter01.sol": {
-      "lastModificationDate": 1661518424942,
-      "contentHash": "da517b27859e4692077121ae89179aad",
-      "sourceName": "contracts/PancakeRouter01.sol",
-      "solcConfig": {
-        "version": "0.6.6",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./interfaces/IPancakeFactory.sol",
-        "./libraries/TransferHelper.sol",
-        "./libraries/PancakeLibrary.sol",
-        "./interfaces/IPancakeRouter01.sol",
-        "./interfaces/IERC20.sol",
-        "./interfaces/IWETH.sol"
-      ],
-      "versionPragmas": [
-        "=0.6.6"
-      ],
-      "artifacts": [
-        "PancakeRouter01"
-      ]
-    },
-    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\libraries\\PancakeLibrary.sol": {
-      "lastModificationDate": 1662519919555,
-      "contentHash": "4ebaccdee523b4f3925dcc8a2d0b0290",
-      "sourceName": "contracts/libraries/PancakeLibrary.sol",
-      "solcConfig": {
-        "version": "0.6.6",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../interfaces/IPancakePair.sol",
-        "./SafeMath.sol"
-      ],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "PancakeLibrary"
-      ]
-    },
-    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\libraries\\SafeMath.sol": {
-      "lastModificationDate": 1661518424953,
-      "contentHash": "9f77127a0e2c55c2058453327e84bde3",
-      "sourceName": "contracts/libraries/SafeMath.sol",
-      "solcConfig": {
-        "version": "0.6.6",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "=0.6.6"
-      ],
-      "artifacts": [
-        "SafeMath"
-      ]
-    },
-    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\PancakeRouter.sol": {
-      "lastModificationDate": 1662113986387,
-      "contentHash": "33cacd67082387bd4582b5ebe94b2bd3",
-      "sourceName": "contracts/PancakeRouter.sol",
-      "solcConfig": {
-        "version": "0.6.6",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./interfaces/IPancakeFactory.sol",
-        "./libraries/TransferHelper.sol",
-        "./interfaces/IPancakeRouter02.sol",
-        "./libraries/PancakeLibrary.sol",
-        "./libraries/SafeMath.sol",
-        "./interfaces/IERC20.sol",
-        "./interfaces/IWETH.sol"
-      ],
-      "versionPragmas": [
-        "=0.6.6"
-      ],
-      "artifacts": [
-        "PancakeRouter"
-      ]
-    },
-    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\PancakeMigrator.sol": {
-      "lastModificationDate": 1661518424941,
-      "contentHash": "b2c4fcca5de40e5223ec1b25488ee84c",
-      "sourceName": "contracts/PancakeMigrator.sol",
-      "solcConfig": {
-        "version": "0.6.6",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./libraries/TransferHelper.sol",
-        "./interfaces/IPancakeMigrator.sol",
-        "./interfaces/V1/IUniswapV1Factory.sol",
-        "./interfaces/V1/IUniswapV1Exchange.sol",
-        "./interfaces/IPancakeRouter01.sol",
-        "./interfaces/IERC20.sol"
-      ],
-      "versionPragmas": [
-        "=0.6.6"
-      ],
-      "artifacts": [
-        "PancakeMigrator"
-      ]
-    },
     "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\contracts\\test\\TransferHelperTest.sol": {
-      "lastModificationDate": 1662540606489,
+      "lastModificationDate": 1662544169817,
       "contentHash": "51469357210019f7778f3eb53e3391a7",
       "sourceName": "contracts/test/TransferHelperTest.sol",
       "solcConfig": {
@@ -984,6 +947,41 @@
       ],
       "artifacts": [
         "TransferHelperTest"
+      ]
+    },
+    "E:\\Projects\\pancakeswap-fork\\africunia-swap\\pancake-swap-periphery\\node_modules\\@nomiclabs\\buidler\\console.sol": {
+      "lastModificationDate": 1662512038910,
+      "contentHash": "c20b2460755f312099ccd61427237ded",
+      "sourceName": "@nomiclabs/buidler/console.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.8.0"
+      ],
+      "artifacts": [
+        "console"
       ]
     }
   }

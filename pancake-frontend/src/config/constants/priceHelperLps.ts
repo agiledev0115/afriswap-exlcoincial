@@ -1,7 +1,7 @@
 import tokens from './tokens'
 import { SerializedFarmConfig } from './types'
-import PancakePair from '../deployments/31337/PancakePair.json'
-import BNB_BUSD_PAIRADDRESS from '../deployments/31337/BNB_BUSD_PairAddress.json'
+import PancakePair from '../deployments/5/PancakePair.json'
+import BNB_BUSD_PAIRADDRESS from '../deployments/5/BNB_BUSD_PairAddress.json'
 
 const priceHelperLps: SerializedFarmConfig[] = [
   /**
@@ -25,7 +25,7 @@ const priceHelperLps: SerializedFarmConfig[] = [
     pid: 1,
     lpSymbol: 'BNB-BUSD LP',
     lpAddresses: {
-      31337: BNB_BUSD_PAIRADDRESS.address,
+      5: BNB_BUSD_PAIRADDRESS.address,
       56: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
     },
     token: tokens.wbnb,
