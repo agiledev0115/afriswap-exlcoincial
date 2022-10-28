@@ -17,6 +17,12 @@
     "prepare": "husky install",
     "add-files": "yarn add file: ./src/libs/local-pancakeswap-libs"
   },
+  "eslintConfig": {
+    "settings": {},
+    "rules": {
+      "strict": "warn"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
